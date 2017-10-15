@@ -1,0 +1,35 @@
+/*
+ * plots.xls
+ * assn4
+ * CS014 summer 2017
+ */
+
+Note: I wasn't able to make the graphs and tables in excel on time.
+Note: Here are the answers to the questions.
+
+1.) What is the worst-case running time of the sorting algorithm? Explain.
+	Mergesort:
+	-The worst-case running time for mergesort is n log(n) because it takes many iterations to complete.
+
+	Quicksort:
+	-The worst-case running time for quicksort is n^2 because of its unbalanced partitions.
+
+2.)What is the average-case running time of the sorting algorithm? Explain.
+	Mergesort:
+        -The average-case running time for mergesort is n log(n) because the running times during the best and worst cases are also n log(n).
+
+	Quicksort:
+        -The average-case running time for quicksort is n log(n) when there is a 3 to 1 split between worst and best cases.
+
+3.)What is the best-case running time of the sorting algorithm? Explain.
+	 Mergesort:
+        -The best-case running time for mergesort is also n log(n) because it can take half the iterations to complete as it does in its worst case.
+
+        Quicksort:
+        -The best-case running time for quicksort is n log(n) when its partitions are as evenly balanced as possible.
+
+4.)Is the sorting algorithm stable? If not, why?
+	Mergesort:Yes, because it is stable by nature.
+
+	
+	Quicksort:No, because the relative order of the items is not exactly preserved.

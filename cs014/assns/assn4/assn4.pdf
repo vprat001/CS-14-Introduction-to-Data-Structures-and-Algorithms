@@ -1,0 +1,66 @@
+/*
+ * assn4.pdf
+ * assn4
+ * CS014 Summer 2017
+ */
+
+CS14 Summer 2017
+
+Programming Assignment 4
+
+Due Sunday July 23 at 11:30 PM
+
+Synopsis - In the assignment you will implement two fundamental Divide-and-Conquer sorting
+algorithms, Quicksort and Mergesort, and measure their performance on data of various size and
+composition. You will submit both your code and written report, with graphs, that demonstrate
+key performance strengths and weaknesses of the two algorithms.
+
+1 Quicksort
+Implement a template function quicksort. Do not associate it with a class, rather implement it
+as utility function in a file named Quicksort.H. Then #include Quicksort.H in your main.cc.
+For debugging purposes initially use a random pivot. Once you are convinced the function sorts
+correctly, extend the functionality to allow for the median of three pivot.
+We must be able to call your function in the following manner:
+vector<string> result = quicksort(v, pivot); – where v is an already defined vector of
+strings and pivot, indicating which pivot is used, is a string that can have one of the following
+values: random or median three. Similarly, your function must also accept and return vectors
+of type int. For the random pivot, pick a random position in the sequence and make that item’s
+key the pivot. For random median of three, repeat the process via a random selection of 3 positions,
+taking the middle key from the three items.
+
+2 Mergesort
+Implement the template functions mergesort and merge . Do not associate them with a class,
+implement them as utility functions in a file named Mergesort.H. Then #include Mergesort.H in
+your main.cc.
+We must be able to call your function in the following manner:
+vector<string> result = mergesort(v); – where v is an already defined vector of strings. Similarly,
+your function must also accept and return vectors of type int.
+
+3 Testing
+Produce several test files for use in measuring the performance of the algorithms. Your test files
+should be of at least two primitive data types, string and int. You can generate random sequences
+of strings and integers at http://www.random.org/strings/ and http://www.random.org/integers/,
+repectively. You will also need to add functionality for counting the number of comparisons and the
+number of data movements for a particular run of the algorithm being tested. Another statistic you
+will measure is the number of recursive calls made for the execution of a particular function. Test
+input sizes of increasing and large N. A general approach would be to have input sequences that are
+mostly-ordered, mostly-random, random, monotonically increasing, and monotonically decreasing.
+
+4 Report
+For each sorting algorithm answer the following questions. Justify your answers with Graphs (see
+below) and references to specific test cases.
+1. What is the worst-case running time of the sorting algorithm? Explain.
+2. What is the average-case running time of the sorting algorithm? Explain.
+3. What is the best-case running time of the sorting algorithm? Explain.
+4. Is the sorting algorithm stable? If not, why?
+Graphs - You should produce plots of input-size v. comparisons, input-size v. data movements,
+input-size v. number of recursive calls for each algorithm and pivot combination. Include your plots
+and their associated data in table format in a single excel file named plots.xls.
+
+5 Submission
+You must turn-in a tar archive through iLearn named assn4.tgz which contains the following
+files: main.cc, Quicksort.H, Mergesort.H, assn4.pdf, and plots.xls. Your main function must
+adequately and automatically test your functions, and display statistics about the sorting that
+occurred. Do not forget to put a class header on every file. Files lacking a header will
+not be graded. Re-download and test your submission. Programs that do not compile with the
+appropriate flags or segfault will receive a zero.
