@@ -1,6 +1,6 @@
 /*
  * Quicksort.H
- * assn4
+ * Assn4
  * CS014 Summer 2017
  */
 #include <iostream>
