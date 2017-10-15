@@ -1,0 +1,12 @@
+//PreOrder: 
+digraph G {
+3 [color = orange, peripheries=2, style = filled, label = "Key= 3, Pre= 1"];
+0 [color = orange, peripheries=2, style = filled, label = "Key= 0, Pre= 2"];
+-1 [color = orange, peripheries=2, style = filled, label = "Key= -1, Pre= 3"];
+0 -> -1; [color=blue];
+5 [color = orange, peripheries=2, style = filled, label = "Key= 5, Pre= 4"];
+7 [color = orange, peripheries=2, style = filled, label = "Key= 7, Pre= 5"];
+5 -> 7; [color=blue];
+3 -> 0; [color=blue];
+3 -> 5; [color=blue];
+}
