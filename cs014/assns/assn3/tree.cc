@@ -191,7 +191,7 @@ void Tree::preOrder(Node* currObj) const {
 		preOrder(currObj->right);
 	}
 }
-/*
+
 void Tree::inOrder() const {
 	if(root == 0)
 	{
@@ -208,7 +208,7 @@ void Tree::inOrder(Node* currObj) const{
 		inOrder(currObj->right);
 	}
 }
-
+/*
 void Tree::postOrder() const {
 	if(root == 0)
 	{
