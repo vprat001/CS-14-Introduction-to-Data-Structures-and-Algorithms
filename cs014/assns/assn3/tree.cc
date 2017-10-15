@@ -208,7 +208,7 @@ void Tree::inOrder(Node* currObj) const{
 		inOrder(currObj->right);
 	}
 }
-/*
+
 void Tree::postOrder() const {
 	if(root == 0)
 	{
@@ -226,7 +226,7 @@ void Tree::postOrder(Node* currObj) const {
 	}
 }
 
-*/
+
 Node* Tree::findMax(Node* currObj)
 {
         if(currObj->right == NULL)
