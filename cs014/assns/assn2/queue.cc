@@ -1,7 +1,7 @@
 /*
  * queue.cc
  * cs014 Summer 2017
- * assn2
+ * Assn2
  */
 #include <iostream>
 #include <stdexcept>
