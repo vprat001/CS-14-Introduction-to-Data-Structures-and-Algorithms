@@ -174,7 +174,7 @@ int Tree::height(Node* hObj) {
 }
 
 
-/*
+
 void Tree::preOrder() const {
 	if(root == 0) 
 	{
@@ -191,7 +191,7 @@ void Tree::preOrder(Node* currObj) const {
 		preOrder(currObj->right);
 	}
 }
-
+/*
 void Tree::inOrder() const {
 	if(root == 0)
 	{
