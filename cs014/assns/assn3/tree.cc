@@ -172,6 +172,8 @@ int Tree::height(Node* hObj) {
 		}
 	}
 }
+
+
 /*
 void Tree::preOrder() const {
 	if(root == 0) 
